@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/*  header section  */
+.head-manu {
+    background-color: #2b4d52;
+    text-align: center;
+}
+
+
+.head-manu ul {}
+
+.head-manu ul li {
+    display: inline-block;
+    margin-left: -4px;
+
+
+}
+
+.head-manu ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 15px 20px;
+    display: inline-block;
+    font-size: 22px;
+    font-weight: bold;
+    border-left: 1px solid aliceblue;
+}
+
+.head-manu ul li:last-child a {
+    border-right: 1px solid aliceblue;
+}
+
+
+.head-manu ul li:hover>a {
+    background-color: rgb(128, 131, 121);
+}
+
+/* Dropdown manu */
+.head-manu ul li {
+    position: relative;
+}
+
+.head-manu ul li ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #2b4d52;
+
+    width: 210px;
+    transition: 0.8s;
+}
+
+.head-manu ul li ul li {
+    display: block;
+    margin: 0;
+
+}
+
+.head-manu ul li ul li a {
+    display: block;
+    border-left: none;
+    border: 1px solid aliceblue;
+}
+
+/***header hover section ***/
+.head-manu ul li ul {
+    visibility: hidden;
+    opacity: 0;
+    transform: scaleY(0);
+    transform-origin: top center;
+
+}
+
+.head-manu ul li:hover ul {
+    opacity: 1;
+    visibility: visible;
+    transform: scaleY(1);
+
+}
