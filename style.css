@@ -55,6 +55,7 @@ body {
 
     width: 210px;
     transition: 0.8s;
+
 }
 
 .head-manu ul li ul li {
@@ -83,4 +84,78 @@ body {
     visibility: visible;
     transform: scaleY(1);
 
+}
+
+/**About section***/
+.about-section {
+    background-image: url(images/top-banner.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-color: #f4f4f4;
+
+
+}
+
+.about-section h1 {
+    text-align: center;
+    color: #41b94e;
+    padding: 10px;
+    margin-bottom: 50px;
+    font-size: 50px
+}
+
+.about-content {
+    display: flex;
+    padding: 20px;
+    text-align: justify;
+}
+
+.left-about {
+    width: 40%;
+    margin-left: 5%;
+
+}
+
+.left-about h2 {
+    font-size: 40px;
+    color: #a640b5;
+    margin-bottom: 30px;
+
+
+}
+
+.left-about h3 {
+    color: #26b343;
+    margin-bottom: 16px;
+
+}
+
+
+.left-about a {
+    background-image: linear-gradient(#31ae31, #f7ff00);
+    padding: 12px 30px;
+    color: honeydew;
+    border-radius: 5px;
+    margin-top: 30px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.left-about a:hover {
+    background-image: linear-gradient(blue, yellow)
+}
+
+.left-about p {
+    color: #0c0b0b;
+
+}
+
+.about-image {
+    width: 40%;
+    margin-left: 12%;
+}
+
+.about-image img {
+    width: 70%;
 }
